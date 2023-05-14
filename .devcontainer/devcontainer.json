@@ -16,6 +16,8 @@
 	  "REGISTRY_HOST=<REGISTRY_HOST>",
 	  "--build-arg",
 	  "REGISTRY_USERNAME=<REGISTRY_USERNAME>",
+	  "--build-arg",
+	  "BASE_VERSION=<BASE_VERSION>",
 	  "-f",
 	  ".devcontainer/Dockerfile",
 	  "."
