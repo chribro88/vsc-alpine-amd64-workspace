@@ -39,3 +39,8 @@ docker push  [<REGISTRY_HOST>/][<REGISTRY_USERNAME>/]alpine-miniconda3[:<BASE_VE
 ```
 docker pull  [<REGISTRY_HOST>/][<REGISTRY_USERNAME>/]alpine-miniconda3[:<BASE_VERSION>]
 ```
+
+Credits - adapted from the following:
+- https://github.com/Docker-Hub-frolvlad/docker-alpine-glibc
+- https://github.com/Docker-Hub-frolvlad/docker-alpine-miniconda3
+- https://github.com/senglin/python-rpi4-workspace
