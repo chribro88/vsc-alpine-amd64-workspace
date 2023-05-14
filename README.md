@@ -22,7 +22,7 @@ docker build \
  - REGISTRY_HOST
  - REGISTRY_USERNAME
  - DOCKER_HOST
-5. Pull the image to local docker host, then reopening container in vscode
+4. Pull the image to local docker host, then reopening container in vscode
 ```
 docker pull  [<REGISTRY_HOST>/][<REGISTRY_USERNAME>/]alpine-miniconda3[:<BASE_VERSION>]
 ```
