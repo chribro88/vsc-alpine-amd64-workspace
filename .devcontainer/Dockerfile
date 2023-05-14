@@ -13,8 +13,6 @@ ARG USER_UID=1000
 ARG USER_GID=$USER_UID
 ARG DOCKER_GID=998
 
-ENV HOME /home/$USER
-
 RUN apk --update --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/testing --repository http://dl-cdn.alpinelinux.org/alpine/edge/main add \
                 curl \
                 # git, process tools, lsb-release (common in install instructions for CLIs) installed
