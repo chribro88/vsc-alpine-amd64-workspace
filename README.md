@@ -2,7 +2,7 @@
  - with Miniconda & Docker
  - Alpine 3.18
 
-Build and commit following first:
+Build:
 1. https://github.com/chribro88/docker-alpine-glibc
 
 ```
@@ -25,7 +25,7 @@ docker build --build-arg IMAGE=[<REGISTRY_HOST>/][<REGISTRY_USERNAME>/]alpine-gl
    - Dockerfile
      - DOCKER_GID
 
-4. Pull the image to local docker host, then reopening container in vscode
+4. Reopen container in vscode (Need image on local docker host so pull if not)
 ```
 docker pull  [<REGISTRY_HOST>/][<REGISTRY_USERNAME>/]alpine-miniconda3[:<BASE_VERSION>]
 ```
