@@ -2,8 +2,8 @@
  - with Miniconda & Docker
  - Alpine 3.18
 
-Build:
-1. https://github.com/chribro88/docker-alpine-glibc
+1. Build alpine-glibc:
+    - https://github.com/chribro88/docker-alpine-glibc
 
 ```
 docker build --build-arg BASE_VERSION=3.18 https://github.com/chribro88/docker-alpine-glibc.git -t [<REGISTRY_HOST>/][<REGISTRY_USERNAME>/]alpine-glibc[:<BASE_VERSION>]
@@ -13,8 +13,8 @@ docker tag alpine-glibc[:<BASE_VERSION>] [<REGISTRY_HOST>/][<REGISTRY_USERNAME>/
 docker push  [<REGISTRY_HOST>/][<REGISTRY_USERNAME>/]alpine-glibc[:<BASE_VERSION>]
 
 ```
-
-2. https://github.com/chribro88/docker-alpine-miniconda3
+2. Build alpine-miniconda3:
+    - https://github.com/chribro88/docker-alpine-miniconda3
 ```
 docker build --build-arg IMAGE=[<REGISTRY_HOST>/][<REGISTRY_USERNAME>/]alpine-glibc[:<BASE_VERSION>] https://github.com/chribro88/docker-alpine-miniconda3.git -t [<REGISTRY_HOST>/][<REGISTRY_USERNAME>/]alpine-miniconda3[:<BASE_VERSION>]
 
