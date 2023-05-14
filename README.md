@@ -14,6 +14,7 @@ docker build \
 2. https://github.com/chribro88/docker-alpine-miniconda3
 ```
 docker build \
+  --build-arg IMAGE=[<REGISTRY_HOST>/][<REGISTRY_USERNAME>/]alpine-glibc[:<BASE_VERSION>]
   https://github.com/chribro88/docker-alpine-miniconda3#alpine-<BASE_VERSION> \ 
   -t [<REGISTRY_HOST>/][<REGISTRY_USERNAME>/]alpine-miniconda3[:<BASE_VERSION>]
 ```
