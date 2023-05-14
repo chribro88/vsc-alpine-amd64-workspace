@@ -13,9 +13,9 @@
 	  "docker",
 	  "build",
 	  "--build-arg",
-	  "REGISTRY_HOST=<REGISTRY_HOST>/",
+	  "REGISTRY_HOST=<REGISTRY_HOST>",
 	  "--build-arg",
-	  "REGISTRY_USERNAME=<REGISTRY_USERNAME>/",
+	  "REGISTRY_USERNAME=<REGISTRY_USERNAME>",
 	  "-f",
 	  ".devcontainer/Dockerfile",
 	  "."
