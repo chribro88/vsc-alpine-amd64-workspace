@@ -1,4 +1,4 @@
-#!/bin/bash --login
+#!/bin/sh --login
 
 # Create Virtual Environment
 FILE=/tmp/conda-tmp/environment.yml
