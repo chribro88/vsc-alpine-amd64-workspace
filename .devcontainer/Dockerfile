@@ -59,7 +59,7 @@ RUN \
     && echo $USERNAME:100000:65536 >/etc/subuid
 
 # copy over the conda environment setup script
-COPY --chown=1000 .devcontainer/postCreateCommand.sh \
+COPY --chown=$USER_UID .devcontainer/postCreateCommand.sh \
      .devcontainer/environment.yml* /tmp/conda-tmp/
 
 RUN chmod +x /tmp/conda-tmp/postCreateCommand.sh
