@@ -10,7 +10,7 @@ if [ true ]; then
     echo "conda activate $env_name" >> ~/.bashrc
     echo "clear" >> ~/.bashrc
     # attempt fix weird terminal output by setting COLUMNS (still doesn't work)
-    COLUMNS=55 conda env create --file /tmp/conda-tmp/environment.yml --force
+    COLUMNS=55 conda env create --file /tmp/conda-tmp/environment.yml
     # rm -f /tmp/conda-tmp/environment.yml
 fi
 
